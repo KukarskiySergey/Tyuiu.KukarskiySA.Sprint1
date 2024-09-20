@@ -1,11 +1,12 @@
-﻿namespace Tyuiu.KukarskiySA.Sprint1.Task0.V9.Lib
+﻿using tyuiu.cources.programming.interfaces.Sprint1;
+namespace Tyuiu.KukarskiySA.Sprint1.Task0.V9.Lib
+
 {
-    public class DataService
+    public class DataService : ISprint1Task0V9
     {
-        public static int GetResult(int a, int b, int c, int d, int e)
+        public double Calculate()
         {
-            int result = (a / b) * c / b / d + e;
-            return result;
+            return (9 / 3) * 4 / 3 / 2 + 1;
         }
     }
 }
