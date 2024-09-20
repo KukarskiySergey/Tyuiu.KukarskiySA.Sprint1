@@ -8,11 +8,12 @@ namespace Tyuiu.KukarskiySA.Sprint1.Task1.V11.Test
         [TestMethod]
         public void CheckGetAnswerValid()
         {
-            int numberOne = 5;
-            int numberTwo = 6;
-            var answer = DataService.ResultCalculation(5,6);
+            DataService dataService = new DataService();
+            double x = 2;
+            double y = 3;
+            var result = dataService.Calculate(x, y);
 
-            Assert.AreEqual(answer, numberOne, numberTwo);
+            Assert.AreEqual(18, result);
         }
     }
 }
