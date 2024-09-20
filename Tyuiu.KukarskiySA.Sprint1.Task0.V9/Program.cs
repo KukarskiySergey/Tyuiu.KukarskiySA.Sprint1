@@ -8,5 +8,3 @@ int e = 1;
 int result = DataService.GetResult(a, b, c, d, e);
 Console.WriteLine(result);
 Console.ReadKey();
-
-Console.WriteLine(result);
