@@ -1,4 +1,5 @@
-﻿using Tyuiu.KukarskiySA.Sprint1.Task5.V5.Lib;
+﻿
+using Tyuiu.KukarskiySA.Sprint1.Task6.V12.Lib;
 
 DataService dataService = new DataService();
 
@@ -11,19 +12,21 @@ Console.WriteLine("* Вариант #18                                         
 Console.WriteLine("* Выполнил Кукарский Сергей Андреевич | ИИПб-24-1                      *");
 Console.WriteLine("************************************************************************");
 Console.WriteLine("* УСЛОВИЕ:                                                             *");
-Console.WriteLine("* Написать программу, которая решает следующую задачу:                 *");
-Console.WriteLine("* Присвоить целой переменной d первую цифру из дробной части           *");
-Console.WriteLine("* положительного вещественного числа x                                 *");
+Console.WriteLine("* Написать программу: пользователь вводит текст.                       *");
+Console.WriteLine("* Проверить, что последнее слово строки входит в нее еще раз.          *");
 Console.WriteLine("*                                                                      *");
 Console.WriteLine("************************************************************************");
 Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                     *");
 Console.WriteLine("************************************************************************");
-Console.WriteLine("* (так, если x=32.597, то d=5).                                        *");
+Console.WriteLine("*                                                                      *");
 Console.WriteLine("************************************************************************");
-Console.Write("Введите число: ");
-double number = double.Parse(Console.ReadLine());
+
+Console.Write("Введите текст: ");
+string userString = Console.ReadLine();
+
 Console.WriteLine("************************************************************************");
 Console.WriteLine("* РЕЗУЛЬТАТ:                                                           *");
 Console.WriteLine("************************************************************************");
-Console.WriteLine($"Первая цифра из дробной части положительного вещественного числа = " +
-    $"{dataService.Calculate(number)}");
+
+Console.WriteLine($"Слово встречается в тексте ещё раз - " +
+    $"{dataService.CheckLastWordRepetiton(userString)}");
