@@ -21,6 +21,12 @@ Console.WriteLine("*************************************************************
 Console.WriteLine("* Написать программу для вычисления площади прямоугольного треугольника*");
 Console.WriteLine("* по длинам двух катетов. Ответ округлите до 3 знаков после запятой.   *");
 Console.WriteLine("************************************************************************");
+Console.Write("Введите длину первого катета: ");
+double lengthCathetus1 = double.Parse(Console.ReadLine());
+Console.Write("Введите длину второго катета: ");
+double lengthCathetus2 = double.Parse(Console.ReadLine());
+Console.WriteLine("************************************************************************");
 Console.WriteLine("* РЕЗУЛЬТАТ:                                                           *");
 Console.WriteLine("************************************************************************");
-Console.WriteLine($"  ");
+Console.WriteLine($"Площадь прямоугольного треугольника: " +
+    $"{dataService.TriangleArea(lengthCathetus1, lengthCathetus2)}");
