@@ -11,7 +11,7 @@ namespace Tyuiu.KukarskiySA.Sprint1.Task2.V28.Test
             DataService dataService = new DataService();
             int celsius = 0;
             int kelvin = 273;
-            var result = dataService.Calculate(celsius);
+            var result = dataService.ConvertCelsiusToKelvin(celsius);
 
             Assert.AreEqual(273, result);
         }

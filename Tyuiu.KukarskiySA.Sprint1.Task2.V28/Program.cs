@@ -25,4 +25,4 @@ Console.WriteLine($"{celsius} градусов Цельсия.");
 Console.WriteLine("************************************************************************");
 Console.WriteLine("* РЕЗУЛЬТАТ:                                                           *");
 Console.WriteLine("************************************************************************");
-Console.WriteLine($"{celsius} градусов Цельсия = {dataService.Calculate(celsius)} градусов Кельвина");
+Console.WriteLine($"{celsius} градусов Цельсия = {dataService.ConvertCelsiusToKelvin(celsius)} градусов Кельвина");
